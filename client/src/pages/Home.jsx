@@ -9,7 +9,7 @@ function Home() {
   const dispatch = useDispatch()
 
   useEffect(() => {
-    fetch('http://localhost:5000/api/products')
+    fetch('https://shopstack-server.onrender.com/api/products')
       .then((res) => res.json())
       .then((data) => setProducts(data))
   }, [])

@@ -10,7 +10,7 @@ function ProductDetail() {
   const navigate = useNavigate()
 
   useEffect(() => {
-    fetch('http://localhost:5000/api/products')
+    fetch('https://shopstack-server.onrender.com/api/products')
       .then((res) => res.json())
       .then((data) => {
         const found = data.find((p) => p._id === id)
